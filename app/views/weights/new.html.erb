@@ -1,0 +1,16 @@
+<div class="center">
+ <%= form_with url: weights_judge_path, method: :post, local: true, data: { turbo: false } do %>
+  <div>
+    <label>1日目：</label>
+    <%= number_field_tag :day1, nil, step: 'any' %> kg
+  </div>
+  <div>
+    <label>2日目：</label>
+    <%= number_field_tag :day2, nil, step: 'any' %> kg
+  </div>
+  <%= submit_tag "比較" %>
+<% end %>
+  <p><%= link_to "TOPページ", root_path %></p>
+ 
+</div>
+

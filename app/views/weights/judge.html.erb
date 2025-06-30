@@ -1,0 +1,6 @@
+<div class="center">
+  <p><%= @result %></p>
+  <p>増減量：<%= @difference %> kg </p>
+  <%= image_tag(@image, width: 300, height: 300) if @image.present? %>
+  <p><%= link_to "入力画面に戻る", weights_new_path %></p>
+</div>
